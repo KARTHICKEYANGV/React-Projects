@@ -1,15 +1,10 @@
+import Header from './Components/Header'
 function App(){
-    const content = "Comments"
-    const arr = [
-        {id: 1, text:"Comment 1"},
-        {id: 2, text:"Comment 2"},
-        {id: 3, text:"Comment 3"},
-    ]
+ 
     return <div>
-        <h1>{content}</h1>
-        {arr.map((comment,index) => (
-            <li key={index}>{comment.text}</li>
-        ))}
+        <Header />
+        <div className="container"></div>
+        <h1>My App</h1>
     </div>
 }
 
